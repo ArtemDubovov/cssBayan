@@ -4,3 +4,46 @@
   box-sizing: border-box;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.title {
+  margin-top: 40px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mem-input-1 {
+  display: none;
+}
+
+.mem-img-1 {
+  opacity: 0;
+}
+
+.mem-label-1 {
+  display: block;
+}
+
+.mem-input-1 + .mem-label-1 + .mem-img-1 {
+  height: 0px;
+  opacity: 1;
+}
+
+.mem-input-1:hover + .mem-label-1 > .mem-img-1 {
+  opacity: 1;
+  height: auto;
+}
+
+/* .mem-label-1:hover {
+  opacity: 1;
+  height: auto;
+}
+
+.mem-img-1:hover {
+  opacity: 1;
+  height: auto;
+} */
