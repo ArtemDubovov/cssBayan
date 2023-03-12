@@ -30,8 +30,8 @@ body {
   color: black;
 }
 
-.mem-content {
-  content: "";
+.mem-content__icon {
+  opacity: 0;
 }
 
 .list-item {
@@ -102,12 +102,12 @@ body {
 
 /* HOVER */
 
-.list:hover  .mem-content:after {
-  content: '+';
+.list:hover  .mem-content__icon {
+  opacity: 1;
 }
 
 .mem-input:hover + .mem-label > .mem-content:after {
-  content: '+';
+  opacity: 1;
 }
 
 .mem-input-1:hover + .mem-label-1 > .mem-img-1 {
@@ -147,7 +147,7 @@ body {
 }
 
 
-.mem-input:checked + .mem-label > .mem-content:after {
+.mem-input:checked + .mem-label > .mem-content > .mem-content__icon{
   transform: rotate(45deg);
 }
 
