@@ -1,6 +1,6 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0rem;
+  margin: 0rem;
   box-sizing: border-box;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -10,11 +10,11 @@ body {
 }
 
 .title {
-  margin-top: 40px;
+  margin-top: 3rem;
 }
 
 .wrapper {
-  margin: 40px;
+  margin: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,22 +35,22 @@ body {
 }
 
 .list-item {
-  border-top: 1px solid rgb(104, 104, 104);
+  border-top: .1rem solid rgb(104, 104, 104);
   list-style-type: none;
   display: block;
   text-align: start;
-  font-size: 24px;
+  font-size: 1.6rem;
 }
 
 .mem-img {
-  margin: 10px 0px;
-  max-width: 400px;
+  margin: 1rem 0rem;
+  max-width: 25rem;
   opacity: 0;
-  transform: translateY(-300px);
+  transform: translateY(-15rem);
   transition: transform 1s, opacity 2s;
   cursor: pointer;
-  border-radius: 50px;
-  height: 0px;
+  border-radius: 3rem;
+  height: 0rem;
 }
 
 .mem-label {
@@ -113,31 +113,31 @@ body {
 .mem-input-1:hover + .mem-label-1 > .mem-img-1 {
   opacity: 1;
   height: auto;
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 
 .mem-input-2:hover + .mem-label-2 > .mem-img-2 {
   opacity: 1;
   height: auto;
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 
 .mem-input-3:hover + .mem-label-3 > .mem-img-3 {
   opacity: 1;
   height: auto;
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 
 .mem-input-4:hover + .mem-label-4 > .mem-img-4 {
   opacity: 1;
   height: auto;
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 
 .mem-input-5:hover + .mem-label-5 > .mem-img-5 {
   opacity: 1;
   height: auto;
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 
 /* CHECKED */
@@ -154,30 +154,30 @@ body {
 .mem-input-1:checked + .mem-label-1 > .mem-img-1 {
   opacity: 1;
   height: auto;
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 
 
 .mem-input-2:checked + .mem-label-2 > .mem-img-2 {
   opacity: 1;
   height: auto;
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 
 .mem-input-3:checked + .mem-label-3 > .mem-img-3 {
   opacity: 1;
   height: auto;
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 
 .mem-input-4:checked + .mem-label-4 > .mem-img-4 {
   opacity: 1;
   height: auto;
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 
 .mem-input-5:checked + .mem-label-5 > .mem-img-5 {
   opacity: 1;
   height: auto;
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
