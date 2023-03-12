@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: rgb(228, 228, 228);
 }
 
 .title {
@@ -28,6 +28,10 @@ body {
 
 .list:hover {
   color: black;
+}
+
+.list:hover + .mem-content {
+  content: "";
 }
 
 .list-item {
@@ -61,6 +65,12 @@ body {
 
 .mem-label {
   transition: .3s color, .3s opacity;
+  cursor: pointer;
+}
+
+.mem-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ACTIVE */
@@ -91,6 +101,10 @@ body {
 }
 
 /* HOVER */
+
+.mem-input:hover + .mem-label > .mem-content:after {
+  content: '×';
+}
 
 .mem-input-1:hover + .mem-label-1 > .mem-img-1 {
   opacity: 1;
@@ -124,11 +138,21 @@ body {
 
 /* CHECKED */
 
+.mem-input:checked + .mem-label {
+  color: red;
+}
+
+
+.mem-input:checked + .mem-label > .mem-content:after {
+  content: '×';
+}
+
 .mem-input-1:checked + .mem-label-1 > .mem-img-1 {
   opacity: 1;
   height: auto;
   transform: translateY(0px);
 }
+
 
 .mem-input-2:checked + .mem-label-2 > .mem-img-2 {
   opacity: 1;
