@@ -108,10 +108,6 @@ body {
   opacity: 1;
 }
 
-.mem-input:hover + .mem-label > .mem-content:after {
-  opacity: 1;
-}
-
 .mem-input-1:hover + .mem-label-1 > .mem-img-1 {
   opacity: 1;
   height: auto;
@@ -144,7 +140,7 @@ body {
 
 /* CHECKED */
 
-.mem-input:checked + .mem-label {
+.mem-input:checked > .mem-label {
   color: black;
 }
 
