@@ -32,6 +32,7 @@ body {
 }
 
 .mem-content__icon {
+  transition: .3s all;
   opacity: 0;
 }
 
@@ -144,7 +145,7 @@ body {
 /* CHECKED */
 
 .mem-input:checked + .mem-label {
-  color: red;
+  color: black;
 }
 
 
