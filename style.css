@@ -1,0 +1,252 @@
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(228, 228, 228);
+}
+
+.title {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.wrapper {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  color: blue;
+}
+
+
+.list:hover {
+  color: black;
+}
+
+.mem-content__icon {
+  transition: .3s all;
+  opacity: 0;
+}
+
+.list-item {
+  border-top: .1rem solid rgb(104, 104, 104);
+  list-style-type: none;
+  display: block;
+  text-align: start;
+  font-size: 1.6rem;
+}
+
+.mem-img {
+  margin: 1rem 0rem;
+  max-width: 25rem;
+  opacity: 0;
+  transform: translateY(-15rem);
+  transition: transform 1s, opacity 2s;
+  cursor: pointer;
+  border-radius: 3rem;
+  height: 0rem;
+}
+
+.mem-label {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mem-input {
+  display: none;
+}
+
+.mem-label {
+  transition: .3s color, .3s opacity;
+  cursor: pointer;
+}
+
+.mem-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ACTIVE */
+
+.mem-input-1:active + .mem-label-1 {
+  color: rgb(160, 160, 209);
+  opacity: .5;
+}
+
+.mem-input-2:active + .mem-label-2 {
+  color: rgb(160, 160, 209);
+  opacity: .5;
+}
+
+.mem-input-3:active + .mem-label-3 {
+  color: rgb(160, 160, 209);
+  opacity: .5;
+}
+
+.mem-input-4:active + .mem-label-4 {
+  color: rgb(160, 160, 209);
+  opacity: .5;
+}
+
+.mem-input-5:active + .mem-label-5 {
+  color: rgb(160, 160, 209);
+  opacity: .5;
+}
+
+/* HOVER */
+
+.list:hover  .mem-content__icon {
+  opacity: 1;
+}
+
+.mem-input-1:hover + .mem-label-1 > .mem-img-1 {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0rem);
+}
+
+.mem-input-2:hover + .mem-label-2 > .mem-img-2 {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0rem);
+}
+
+.mem-input-3:hover + .mem-label-3 > .mem-img-3 {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0rem);
+}
+
+.mem-input-4:hover + .mem-label-4 > .mem-img-4 {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0rem);
+}
+
+.mem-input-5:hover + .mem-label-5 > .mem-img-5 {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0rem);
+}
+
+/* CHECKED */
+
+.mem-input:checked > .mem-label {
+  color: black;
+}
+
+
+.mem-input:checked + .mem-label > .mem-content > .mem-content__icon{
+  transform: rotate(45deg);
+}
+
+.mem-input-1:checked + .mem-label-1 > .mem-img-1 {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0rem);
+}
+
+
+.mem-input-2:checked + .mem-label-2 > .mem-img-2 {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0rem);
+}
+
+.mem-input-3:checked + .mem-label-3 > .mem-img-3 {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0rem);
+}
+
+.mem-input-4:checked + .mem-label-4 > .mem-img-4 {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0rem);
+}
+
+.mem-input-5:checked + .mem-label-5 > .mem-img-5 {
+  opacity: 1;
+  height: auto;
+  transform: translateY(0rem);
+}
+
+/* MEDIA */
+
+@media (max-width: 1920px) {
+  
+}
+
+@media (max-width: 820px) {
+  .title {
+    margin: 4rem;
+    font-size: 3rem;
+  }
+  .wrapper {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mem-img {
+    margin: 1rem 0rem;
+    max-width: 20rem;
+    opacity: 0;
+    transform: translateY(-15rem);
+    transition: transform 1s, opacity 2s;
+    cursor: pointer;
+    border-radius: 3rem;
+    height: 0rem;
+  }
+  .list-item {
+    border-top: .1rem solid rgb(104, 104, 104);
+    list-style-type: none;
+    display: block;
+    text-align: start;
+    font-size: 1.8rem;
+  }
+  
+}
+
+@media (max-width: 540px) {
+
+  .title {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  .wrapper {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mem-img {
+    margin: 1rem 0rem;
+    max-width: 90%;
+    opacity: 0;
+    transform: translateY(-15rem);
+    transition: transform 1s, opacity 2s;
+    cursor: pointer;
+    border-radius: 3rem;
+    height: 0rem;
+  }
+  .list-item {
+    border-top: .1rem solid rgb(104, 104, 104);
+    list-style-type: none;
+    display: block;
+    text-align: start;
+    font-size: 1rem;
+  }
+  
+}
